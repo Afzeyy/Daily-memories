@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta tags for character set and viewport -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Page title and external stylesheets -->
+    <title>Booksky</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code&family=Poppins&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Navbar section -->
+    <div class="navbar">
+        <h1>Booksky</h1>
+    </div>
+
+    <!-- Main container with an initial book container -->
+    <div class="container">
+        <div class="book-container">
+            <h2>The Alchemist</h2>
+            <h5> Paulo Coelho</h5>
+            <p>"And, when you want something, all the universe conspires in helping you to achieve it."</p>
+            <button id="close" onclick="delete1(event)">Delete</button>
+        </div>
+    </div>
+
+    <!-- Overlay, Popup, and Add button sections -->
+    <div class="overlay"></div>
+    <div class="popup">
+        <h2>Add Book</h2>
+        <form>
+            <input type="text" placeholder="Book title" id="popbooktitle">
+            <input type="text" placeholder="Author Name" id="popbookauthor">
+            <textarea type="text" placeholder="Describe" id="popbooktext"></textarea>
+            <button id="popadd">Add</button>
+            <button id="popcancel">Cancel</button>
+        </form>
+    </div>
+    <div>
+        <button class="add" onclick="add1(event)">+</button>
+    </div>
+
+    <!-- JavaScript file inclusion -->
+    <script src="script.js"></script>
+</body>
+
+</html>

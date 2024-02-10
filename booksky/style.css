@@ -1,0 +1,152 @@
+/* Resetting margin and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Styles for buttons, making them look clickable */
+/* Define button styles */
+button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    color: black;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  /* Add hover effect */
+  button:hover {
+    background-color:#FD6569;
+    color: #fff;
+  }
+  
+  /* Add animation effect */
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  /* Apply animation on button click */
+  button:active {
+    animation: pulse 0.3s ease-out;
+  }
+  
+
+/* Global font family for the body */
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Styles for the navbar */
+.navbar {
+    background-color: #FD6569;
+    padding: 10px;
+    z-index: 1;
+    text-align: center;
+}
+
+/* Styles for the main container */
+.container {
+    padding: 10px;
+    position: absolute;
+    z-index: 1;
+}
+
+/* Styles for book containers */
+.book-container {
+    background-color: black;
+    color: white;
+    width: 30%;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+/* Styles for book titles within containers */
+.book-container h2 {
+    color: #FD6569;
+}
+
+/* Styles for buttons within book containers */
+.book-container button {
+    background-color: #FD6569;
+    color: black;
+    padding: 2px;
+    margin: 2px;
+    border: none;
+}
+
+/* Styles for the add button */
+.add {
+    background-color: #FD6569;
+    color: black;
+    border-radius: 100%;
+    padding: 20px 30px;
+    font-size: 40px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    border: none;
+}
+
+/* Styles for the overlay */
+.overlay {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    position: absolute;
+    opacity: 0.8;
+    z-index: 2;
+    display: none;
+}
+
+/* Styles for the popup */
+.popup {
+    background-color: #FD6569;
+    width: 40%;
+    padding: 40px;
+    border-radius: 10px;
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    z-index: 3;
+    display: none;
+}
+
+/* Styles for inputs and textarea within the popup */
+.popup input,
+.popup textarea {
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid black;
+    width: 100%;
+    margin: 5px;
+    padding: 5px;
+    font-size: 20px;
+}
+
+/* Styles for placeholder text color within the popup */
+.popup ::placeholder {
+    color: black;
+}
+
+/* Styles for buttons within the popup */
+.popup button {
+    background-color: black;
+    color: #FD6569;
+    padding: 5px;
+    margin: 2px;
+    border-radius: 1.5px;
+}
